@@ -1,1 +1,7 @@
 # buk
+
+
+## License
+
+
+MIT License.
