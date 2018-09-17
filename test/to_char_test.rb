@@ -14,5 +14,8 @@ class ToCharTest < Minitest::Test
     assert_output("[\"a\", \" \", \"s\", \"t\", \"r\", \"i\", \"n\", \"g\"]\n") {
       print 'a string'.to_char, "\n"
     }
+    assert_output("[\"a\", \" \", \"s\", \"t\", \"r\", \"i\", \"n\", \"g\"]\n") {
+      printf "%s\n", 'a string'.to_char
+    }
   end
 end
