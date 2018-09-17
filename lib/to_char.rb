@@ -21,4 +21,6 @@ if __FILE__ == $0
   # g
 
   print 'a string'.to_char, "\n" # => ["a", " ", "s", "t", "r", "i", "n", "g"]
+
+  printf "%s\n", 'a string'.to_char # => ["a", " ", "s", "t", "r", "i", "n", "g"]
 end
