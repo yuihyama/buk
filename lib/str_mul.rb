@@ -7,11 +7,14 @@ class String
 end
 
 if __FILE__ == $0
-  p 'xxx'.str_mul(2) # => "xxxxxx"
+  p 'xxx'.str_mul(2)
+  # => "xxxxxx"
 
-  puts 'abc'.str_mul(2) # => abcabc
+  puts 'abc'.str_mul(2)
+  # => abcabc
 
   # print 'xyz'.str_mul(-2) # => ArgumentError
 
-  print 'xyz'.str_mul(3.3), "\n" # => xyzxyzxyz
+  print 'xyz'.str_mul(3.3), "\n"
+  # => xyzxyzxyz
 end
