@@ -7,9 +7,9 @@ class StrMulTest < Minitest::Test
     assert_equal 'abcabc', 'abc'.str_mul(2)
     assert_equal 'abcabcabc', 'abc'.str_mul(3.3)
 
-    assert_raises(ArgumentError) { 'abc'.str_mul(-2) }
     assert_raises(NoMethodError) { 1.str_mul(2) }
     assert_raises(NoMethodError) { 1.str_mul('2') }
+    assert_raises(ArgumentError) { 'abc'.str_mul(-2) }
 
     assert_output("\"xxxxxx\"\n") { p 'xxx'.str_mul(2) }
     assert_output("abcabc\n") { puts 'abc'.str_mul(2) }
