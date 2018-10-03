@@ -2,7 +2,7 @@
 
 class String
   def str_mul(times)
-    self * times
+    send(:*, times)
   end
 end
 
